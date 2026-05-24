@@ -1,0 +1,82 @@
+Estoy desarrollando una página web portfolio audiovisual en HTML y CSS puro (sin frameworks por ahora). La estructura del proyecto es:
+
+* index.html
+* stopmotion.html
+* animacion.html
+* cortometrajes.html
+* reels.html
+* about.html
+* contacto.html
+* style.css
+
+La web está inspirada visualmente en Twitch, Netflix, Prime Video y YouTube, pero adaptada a una identidad cinematográfica y artística.
+
+Objetivo visual:
+
+* estética audiovisual premium
+* sensación inmersiva y cinematográfica
+* minimalista pero moderna
+* fuerte dirección visual
+* diseño elegante y oscuro
+* experiencia tipo plataforma de streaming
+* mucho protagonismo visual
+* navegación limpia
+* hover animations suaves
+* sensación profesional/artística
+
+La arquitectura funciona así:
+
+* Home = mapa principal de navegación
+* Cada categoría abre una página distinta
+* Las páginas están conectadas mediante href entre archivos HTML
+
+Secciones:
+
+* Home
+* Stop Motion
+* Animación
+* Cortometrajes
+* Reels
+* Sobre mí
+* Contacto
+
+La homepage tiene:
+
+* hero fullscreen
+* fondo audiovisual/video/imágenes
+* 3 botones principales:
+
+  * Stop Motion
+  * Animación
+  * Cortometrajes
+* accesos secundarios:
+
+  * Reels
+  * Sobre mí
+  * Contacto
+
+La paleta de colores oficial es:
+
+* #123E4F
+* #174B61
+* #4F7F8F
+* #8FB9C4
+* #E6F9FA
+* #A63838
+* #C74444
+* #D97A7A
+* #F2BABA
+* #FDF3F3
+
+Actualmente los espacios multimedia usan placeholders negros porque luego voy a reemplazarlos con imágenes/videos reales.
+
+Quiero que cualquier mejora o código nuevo respete:
+
+* la identidad cinematográfica
+* la navegación tipo streaming platform
+* el estilo minimalista audiovisual
+* la estructura multi-page
+* HTML + CSS puro
+* responsive design
+* estética moderna premium
+* consistencia visual entre páginas
