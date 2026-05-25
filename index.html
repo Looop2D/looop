@@ -15,24 +15,41 @@
     </a>
 
     <nav aria-label="Navegación principal">
-      <a href="index.html" class="active">Inicio</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="about.html">Sobre mí</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
+  <a href="index.html" class="active">Inicio</a>
+
+  <div class="nav-dropdown">
+    <a href="#proyectos" class="nav-link">
+      Proyectos <span class="arrow">▾</span>
+
+    </a>
+
+
+    <div class="dropdown-menu">
+      <a href="animacion.html">Animación</a>
+      <a href="reels.html">Reels</a>
+      <a href="cortometrajes.html">Edición de videos / cortometrajes</a>
+      <a href="otros.html">Otros</a>
+    </div>
+  </div>
+
+  <a href="about.html">Sobre mí</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
   </header>
 
   <main>
     <section class="hero" aria-labelledby="home-title">
       <div class="hero-meta">
         <span class="rec-light"></span>
-        <p>
+        <div class="hero-text">
           <span>00:00:01</span>
           Animación 2D<br>
           Motion graphics<br>
           Cortometrajes<br>
-          REC
-        </p>
+          <p class="rec-label">
+  <span>REC</span>
+</p>
+      </div>
       </div>
 
       <div class="orbit orbit-left"></div>
@@ -40,10 +57,11 @@
 
       <div class="hero-stage">
         <h1 id="home-title">Portfolio</h1>
-
-        <div class="girl-placeholder hero-person" aria-label="Placeholder para foto de la chica">
-          <span>Foto</span>
-        </div>
+        <img src="img/agos_cine1.png"
+alt="Agos con claqueta"
+class="person-image hero-person"
+id="agos-cine">
+        <span class="portfolio-marker portfolio-marker-right" aria-hidden="true"></span>
       </div>
 
       <div class="side-words" aria-hidden="true">
@@ -64,7 +82,7 @@
       </div>
     </section>
 
-    <section class="projects" id="proyectos" aria-label="Categorias de proyectos">
+    <section class="projects" id="proyectos" aria-label="Categorías de proyectos">
       <a href="animacion.html" class="project-tile tile-blue">
         <span>Animación</span>
         <small>Ver proyectos -></small>
@@ -73,22 +91,42 @@
 
       <div class="character-callout">
         <div class="bubble">Cada proyecto cuenta una historia única. ¡Exploralos!</div>
-        <div class="girl-placeholder small-person" aria-label="Placeholder para foto de la chica">
-          <span>Foto</span>
-        </div>
+        <img src="img/agos_dialogo1.png" alt="Agos señalando un globo de diálogo" class="person-image small-person">
       </div>
 
       <a href="cortometrajes.html" class="project-tile tile-sky">
         <span>Edición de videos</span>
         <small>Ver proyectos -></small>
-        <i class="tile-wave"></i>
+        <div class="tile-wave">
+  <svg viewBox="0 0 190 110" fill="none">
+
+    <path
+      d="M20 110
+         C20 65, 70 65, 70 110
+         C70 45, 125 45, 125 78
+         C125 95, 150 95, 165 55
+         C172 35, 182 20, 190 18"
+      stroke="#FFF5F4"
+      stroke-width="8"
+      fill="none"
+    />
+
+    <path
+      d="M78 110
+         C78 70, 115 70, 115 108
+         C115 40, 160 40, 190 42"
+      stroke="#A63838"
+      stroke-width="8"
+      fill="none"
+    />
+
+  </svg>
+</div>
       </a>
 
       <div class="character-callout character-right">
         <div class="bubble">¡Gracias por estar acá y ser parte de este viaje creativo!</div>
-        <div class="girl-placeholder small-person" aria-label="Placeholder para foto de la chica">
-          <span>Foto</span>
-        </div>
+        <img src="img/agos_dialogo2.png" alt="Agos saludando" class="person-image small-person">
       </div>
 
       <a href="reels.html" class="project-tile tile-red">
@@ -105,30 +143,71 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div>
-      <img src="img/logo.png" alt="LOOOP" class="footer-logo">
-      <p>Disfrutá experiencias audiovisuales</p>
-    </div>
+<footer class="site-footer">
 
-    <form class="newsletter">
-      <label for="email">Newsletter</label>
-      <input id="email" type="email" placeholder="Escribí tu email...">
-    </form>
+  <!-- Columna 1 -->
+  <div class="footer-brand">
+    <img src="img/logo.png" alt="LOOOP" class="footer-logo">
+    <p>Disfrutá experiencias audiovisuales</p>
+  </div>
 
-    <div class="footer-contact">
-      <strong>Contactanos</strong>
-      <a href="tel:+5491168286828">Tel: +54 9 11 6828-6828</a>
-      <strong>Redes sociales</strong>
-      <div class="socials" aria-label="Redes sociales">
-        <a href="#" aria-label="YouTube">YT</a>
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Twitter">TW</a>
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="LinkedIn">IN</a>
-      </div>
+  <!-- Columna 2 -->
+  <div class="footer-mail">
+    <span>¿Trabajamos juntos?</span>
+    <a href="mailto:estudio.looop@gmail.com">
+      estudio.looop@gmail.com
+    </a>
+  </div>
+
+  <!-- Columna 3 -->
+  <div class="footer-phone">
+    <span>Contacto</span>
+    <a href="tel:+5491168286828">
+      +54 9 11 6828-6828
+    </a>
+  </div>
+
+  <!-- Columna 4 -->
+  <div class="footer-social">
+    <span>Redes</span>
+
+    <div class="socials">
+      <a href="#"><img src="img/youtube.png" alt="Youtube"></a>
+      <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
     </div>
-  </footer>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 LOOOP — Portfolio Audiovisual</p>
+  </div>
+
+</footer>
+<script>
+  const agosCine = document.getElementById("agos-cine");
+
+  let frame = 0;
+
+  setInterval(() => {
+
+    if (frame === 0) {
+      // Frame 2
+      agosCine.src = "img/agos_cine2.png";
+      agosCine.style.width = "205px"; // ajusta este valor si se ve grande
+      frame = 1;
+
+    } else {
+      // Frame 1
+      agosCine.src = "img/agos_cine1.png";
+      agosCine.style.width = "220px"; // tamaño normal
+      frame = 0;
+    }
+
+  }, 450); // velocidad de animación
+</script>
+
 </body>
 
 </html>
