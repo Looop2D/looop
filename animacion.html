@@ -7,73 +7,381 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="navbar">
+    <a href="index.html" class="brand" aria-label="Inicio LOOOP">
+      <img src="img/logo.png" alt="LOOOP" class="logo">
+    </a>
 
-<header class="navbar">
+    <nav aria-label="Navegación principal">
+  <a href="index.html" class="active">Inicio</a>
 
-  <div class="logo">
-    AGOS
+  <div class="nav-dropdown">
+    <a href="#proyectos" class="nav-link">
+      Proyectos <span class="arrow">▾</span>
+
+    </a>
+
+
+    <div class="dropdown-menu">
+      <a href="animacion.html">Animación</a>
+      <a href="reels.html">Reels</a>
+      <a href="cortometrajes.html">Edición de videos / cortometrajes</a>
+      <a href="otros.html">Otros</a>
+    </div>
   </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="stopmotion.html">Stop Motion</a>
-    <a href="cortometrajes.html">Cortos</a>
-  </nav>
+  <a href="about.html">Sobre mí</a>
+  <a href="contacto.html">Contacto</a>
+</nav>
+  </header>
 
-</header>
+<main class="animacion-page">
 
+  <!-- HERO -->
+<section class="animacion-hero">
 
-<section class="page">
+  <!-- texto izquierda arriba -->
+  <div class="hero-meta">
+    <span class="rec-light"></span>
 
-  <div class="section-title">
+    <div class="hero-text">
+      <span>00:00:01</span>
+      Animación 2D<br>
+      Motion graphics<br>
+      Cortometrajes<br>
+
+      <p class="rec-label">
+        <span>REC</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ondas -->
+  <div class="orbit orbit-left"></div>
+  <div class="orbit orbit-right"></div>
+
+  <!-- contenido principal -->
+  <div class="animacion-stage">
+
+    <div class="marker-left"></div>
 
     <h1>ANIMACIÓN</h1>
 
-    <p>
-      Motion graphics y visuales experimentales.
-    </p>
+    <img
+      src="img/agos_sentada.png"
+      alt="Agos"
+      class="animacion-character"
+    >
+
 
   </div>
-
-
-  <div class="grid">
-
-    <div class="card">
-      <div class="image"></div>
-
-      <div class="info">
-        <h2>Motion Design</h2>
-        <p>Animación</p>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="image"></div>
-
-      <div class="info">
-        <h2>Visuales</h2>
-        <p>Animación</p>
-      </div>
-    </div>
-
-
-    <div class="card">
-      <div class="image"></div>
-
-      <div class="info">
-        <h2>Experimental</h2>
-        <p>Animación</p>
-      </div>
-    </div>
-
-  </div>
+<div class="explora-line">
+  <span>EXPLORA UNA SECCIÓN DE MIS TRABAJOS</span>
+  <div class="line"></div>
+  <div class="line-square"></div>
+</div>
 
 </section>
 
-<footer>
-  © 2026 Portfolio Audiovisual
-</footer>
+  <!-- PROYECTOS -->
+  <section class="animacion-grid">
 
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-1">
+
+  <img
+    src="img/portada_animacion_1.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/billie_eillish_bel.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">01</div>
+
+        <div class="meta">
+          <span>00:00 - 00:03</span>
+          <h3>Lunch – Billie Eillish</h3>
+          <p>Animación tradicional</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+      <div class="thumb video-thumb" id="video-card-2">
+
+  <img
+    src="img/portada_animacion_2.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/el_gato_y_la_caja.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">02</div>
+
+        <div class="meta">
+          <span>00:00 - 01:17</span>
+          <h3>El gato y la caja</h3>
+          <p>Stop Motion</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-3">
+
+  <img
+    src="img/portada_animacion_3.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/guiame_lago_puelo.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">03</div>
+
+        <div class="meta">
+          <span>00:00 - 01:46</span>
+          <h3>Guiame Lago Puelo</h3>
+          <p>Animación digital</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-4">
+
+  <img
+    src="img/portada_animacion_4.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/flipbook.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">04</div>
+
+        <div class="meta">
+          <span>00:00 - 00:15</span>
+          <h3>Flipbook</h3>
+          <p>Animación tradicional</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-5">
+
+  <img
+    src="img/portada_animacion_5.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/anticipacion.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">05</div>
+
+        <div class="meta">
+          <span>00:00 - 00:03</span>
+          <h3>Anticipación</h3>
+          <p>Animación digital</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-6">
+
+  <img
+    src="img/portada_animacion_6.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/adios_a_la_tierra.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">06</div>
+
+        <div class="meta">
+          <span>00:00 - 00:10</span>
+          <h3>Adiós a la tierra – Isaac Asimov</h3>
+          <p>Animación 3D</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+
+  <!-- Columna 1 -->
+  <div class="footer-brand">
+    <img src="img/logo.png" alt="LOOOP" class="footer-logo">
+    <p>Disfrutá experiencias audiovisuales</p>
+  </div>
+
+  <!-- Columna 2 -->
+  <div class="footer-mail">
+    <span>¿Trabajamos juntos?</span>
+    <a href="mailto:estudio.looop@gmail.com">
+      estudio.looop@gmail.com
+    </a>
+  </div>
+
+  <!-- Columna 3 -->
+  <div class="footer-phone">
+    <span>Contacto</span>
+    <a href="tel:+5491168286828">
+      +54 9 11 6828-6828
+    </a>
+  </div>
+
+  <!-- Columna 4 -->
+  <div class="footer-social">
+    <span>Redes</span>
+
+    <div class="socials">
+      <a href="#"><img src="img/youtube.png" alt="Youtube"></a>
+      <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 LOOOP — Portfolio Audiovisual</p>
+  </div>
+
+</footer>
+<script>
+const videoCards = document.querySelectorAll(".video-thumb");
+
+videoCards.forEach((card) => {
+  const cover = card.querySelector(".video-cover");
+  const playBtn = card.querySelector(".play-btn");
+  const video = card.querySelector(".video-player");
+
+  function playVideo(e) {
+    e.stopPropagation();
+
+    // cerrar otros videos abiertos
+    videoCards.forEach((otherCard) => {
+      const otherVideo = otherCard.querySelector(".video-player");
+
+      if (otherCard !== card) {
+        otherVideo.pause();
+        otherVideo.currentTime = 0;
+        otherCard.classList.remove("playing");
+      }
+    });
+
+    card.classList.add("playing");
+    video.play();
+  }
+
+  cover.addEventListener("click", playVideo);
+  playBtn.addEventListener("click", playVideo);
+
+  video.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+});
+
+// click afuera = cerrar todo
+document.addEventListener("click", () => {
+  videoCards.forEach((card) => {
+    const video = card.querySelector(".video-player");
+
+    if (card.classList.contains("playing")) {
+      video.pause();
+      video.currentTime = 0;
+      card.classList.remove("playing");
+    }
+  });
+});
+</script>
 </body>
 </html>
