@@ -3,77 +3,392 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cortometrajes</title>
+  <title>Edición de Videos</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="navbar">
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="index.html" class="brand" aria-label="Inicio LOOOP">
+      <img src="img/logo.png" alt="LOOOP" class="logo">
+    </a>
 
-  <div class="logo">
-    AGOS
-  </div>
+    <nav aria-label="Navegación principal">
+      <a href="index.html" class="active">Inicio</a>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="stopmotion.html">Stop Motion</a>
-    <a href="animacion.html">Animación</a>
-  </nav>
+      <div class="nav-dropdown">
+        <a href="#proyectos" class="nav-link">
+          Proyectos <span class="arrow">▾</span>
+        </a>
 
-</header>
+        <div class="dropdown-menu">
+          <a href="animacion.html">Animación</a>
+          <a href="reels.html">Reels</a>
+          <a href="edicion_de_videos.html">
+            Edición de videos / cortometrajes
+          </a>
+          <a href="otros.html">Otros</a>
+        </div>
+      </div>
+
+      <a href="about.html">Sobre mí</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main class="videos-page">
+
+    <!-- HERO -->
+    <section class="videos-hero">
+
+      <!-- decoraciones -->
+   
+      <div class="orbit orbit-right"></div>
+
+      <!-- contenido principal -->
+      <div class="videos-stage">
+
+        <h1>
+          EDICIÓN<br>
+          DE VIDEOS
+        </h1>
+
+        <!-- personaje -->
+        <img
+          src="img/agos_videos.png"
+          alt="Agos"
+          class="videos-character"
+        >
+
+        <!-- diálogo -->
+        <div class="videos-bubble">
+          Cada edición tiene un ritmo,
+          una emoción y una intención.
+        </div>
+
+      </div>
+
+      <!-- línea -->
+      <div class="explora-line">
+        <span>EXPLORA UNA SECCIÓN DE MIS TRABAJOS</span>
+        <div class="line"></div>
+        <div class="line-square"></div>
+      </div>
+
+    </section>
+
+    <!-- GRID -->
+    <section class="videos-grid">
+
+      <!-- VIDEO 1 -->
+      <article class="video-card">
+
+        <div class="thumb video-thumb">
+
+          <img
+            src="img/portada_videos_1.png"
+            alt=""
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/dimelo_diaz.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="number">01</div>
+
+          <div class="meta">
+            <span>00:00 - 04:43</span>
+            <h3>Dímelo Diaz</h3>
+            <p>Cortometraje musical</p>
+          </div>
+
+          <a href="#">Ver proceso</a>
+
+        </div>
+
+      </article>
+
+      <!-- VIDEO 2 -->
+      <article class="video-card">
+
+        <div class="thumb video-thumb">
+
+          <img
+            src="img/portada_videos_2.png"
+            alt=""
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/ratatouille.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="number">02</div>
+
+          <div class="meta">
+            <span>00:00 - 01:05</span>
+            <h3>Channel Nº5</h3>
+            <p>Montaje</p>
+          </div>
+
+          <a href="#">Ver proceso</a>
+
+        </div>
+
+      </article>
+
+      <!-- VIDEO 3 -->
+      <article class="video-card">
+
+        <div class="thumb video-thumb">
+
+          <img
+            src="img/portada_videos_3.png"
+            alt=""
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/eclat.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="number">03</div>
+
+          <div class="meta">
+            <span>00:00 - 03:11</span>
+            <h3>Luiz Trompeta</h3>
+            <p>Cortometraje</p>
+          </div>
+
+          <a href="#">Ver proceso</a>
+
+        </div>
+
+      </article>
+
+      <!-- VIDEO 4 -->
+      <article class="video-card">
+
+        <div class="thumb video-thumb">
+
+          <img
+            src="img/portada_videos_4.png"
+            alt=""
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/david_carson.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="number">04</div>
+
+          <div class="meta">
+            <span>00:00 - 01:35</span>
+            <h3>David Carson</h3>
+            <p>Montaje</p>
+          </div>
+
+          <a href="#">Ver proceso</a>
+
+        </div>
+
+      </article>
+
+      <!-- VIDEO 5 -->
+      <article class="video-card">
+
+        <div class="thumb video-thumb">
+
+          <img
+            src="img/portada_videos_5.png"
+            alt=""
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/semiotica.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="number">05</div>
+
+          <div class="meta">
+            <span>00:00 - 04:48</span>
+            <h3>National Semiotic</h3>
+            <p>Subtítulo</p>
+          </div>
+
+          <a href="#">Ver proceso</a>
+
+        </div>
+
+      </article>
+
+      <!-- VIDEO 6 -->
+      <article class="video-card">
+
+        <div class="thumb video-thumb">
+
+          <img
+            src="img/portada_videos_6.png"
+            alt=""
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/hogar.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="project-info">
+
+          <div class="number">06</div>
+
+          <div class="meta">
+            <span>00:00 - 00:58</span>
+            <h3>Vida en el salón</h3>
+            <p>Experimentación de planos</p>
+          </div>
+
+          <a href="#">Ver proceso</a>
+
+        </div>
+
+      </article>
+
+    </section>
 
 
-<section class="page">
+  </main>
 
-  <div class="section-title">
+  <!-- FOOTER -->
+  <footer class="site-footer">
 
-    <h1>CORTOMETRAJES</h1>
+    <div class="footer-brand">
+      <img src="img/logo.png" alt="LOOOP" class="footer-logo">
+      <p>Disfrutá experiencias audiovisuales</p>
+    </div>
 
-    <p>
-      Narrativa cinematográfica y dirección visual.
-    </p>
+    <div class="footer-mail">
+      <span>¿Trabajamos juntos?</span>
+      <a href="mailto:estudio.looop@gmail.com">
+        estudio.looop@gmail.com
+      </a>
+    </div>
 
-  </div>
+    <div class="footer-phone">
+      <span>Contacto</span>
+      <a href="tel:+5491168286828">
+        +54 9 11 6828-6828
+      </a>
+    </div>
 
+    <div class="footer-social">
+      <span>Redes</span>
 
-  <div class="grid">
-
-    <div class="card">
-      <div class="image"></div>
-
-      <div class="info">
-        <h2>Corto 01</h2>
-        <p>Cinematografía</p>
+      <div class="socials">
+        <a href="#"><img src="img/youtube.png"></a>
+        <a href="#"><img src="img/facebook.png"></a>
+        <a href="#"><img src="img/twitter.png"></a>
+        <a href="#"><img src="img/instagram.png"></a>
+        <a href="#"><img src="img/linkedin.png"></a>
       </div>
     </div>
 
-
-    <div class="card">
-      <div class="image"></div>
-
-      <div class="info">
-        <h2>Corto 02</h2>
-        <p>Dirección</p>
-      </div>
+    <div class="footer-bottom">
+      <p>© 2026 LOOOP — Portfolio Audiovisual</p>
     </div>
 
+  </footer>
 
-    <div class="card">
-      <div class="image"></div>
+  <!-- SCRIPT VIDEOS -->
+  <script>
+    const videoCards = document.querySelectorAll(".video-thumb");
 
-      <div class="info">
-        <h2>Corto 03</h2>
-        <p>Narrativa</p>
-      </div>
-    </div>
+    videoCards.forEach((card) => {
 
-  </div>
+      const cover = card.querySelector(".video-cover");
+      const playBtn = card.querySelector(".play-btn");
+      const video = card.querySelector(".video-player");
 
-</section>
+      function playVideo(e){
+        e.stopPropagation();
 
-<footer>
-  © 2026 Portfolio Audiovisual
-</footer>
+        videoCards.forEach((otherCard)=>{
+
+          const otherVideo =
+          otherCard.querySelector(".video-player");
+
+          if(otherCard !== card){
+            otherVideo.pause();
+            otherVideo.currentTime = 0;
+            otherCard.classList.remove("playing");
+          }
+
+        });
+
+        card.classList.add("playing");
+        video.play();
+      }
+
+      cover.addEventListener("click", playVideo);
+      playBtn.addEventListener("click", playVideo);
+
+    });
+
+    document.addEventListener("click", ()=>{
+
+      videoCards.forEach((card)=>{
+
+        const video =
+        card.querySelector(".video-player");
+
+        if(card.classList.contains("playing")){
+          video.pause();
+          video.currentTime = 0;
+          card.classList.remove("playing");
+        }
+
+      });
+
+    });
+  </script>
 
 </body>
 </html>
