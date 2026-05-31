@@ -3,62 +3,191 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
+  <title>Contactame</title>
   <link rel="stylesheet" href="style.css">
+  <script src="components.js" defer></script>
 </head>
-<body>
 
-<header class="navbar">
+<body class="contact-page">
+  <div data-include="header"></div>
 
-  <div class="logo">
-    AGOS
+<main class="contact-main">
+
+  <!-- círculos decorativos -->
+
+  <div class="contact-orbit-right"></div>
+
+  <!-- palabras superiores -->
+  <div class="contact-top-words">
+    <span>CREAR</span>
+    <span>CONECTAR</span>
+    <span>DISEÑAR</span>
   </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
+  <!-- titulo -->
+  <section class="contact-hero">
 
-</header>
+    <h1>CONTACTAME</h1>
+
+  </section>
+
+  <!-- contenido -->
+  <section class="contact-content">
+
+    <!-- izquierda -->
+    <div class="contact-left">
+
+      <div class="contact-title-line">
+  <div class="contact-square"></div>
+  <div class="contact-line"></div>
+</div>
 
 
-<section class="page">
+      <p class="contact-description">
+        ¿Tenés una idea, proyecto o propuesta?<br>
+        Me especializo en animación, edición y contenido audiovisual.<br>
+        Estoy lista para crear algo único con vos.
+      </p>
 
-  <div class="section-title">
+      <!-- mail -->
+      <div class="contact-info-box">
 
-    <h1>CONTACTO</h1>
+        <div class="contact-icon red-box">
+          <img src="img/mail_icon.png" alt="">
+        </div>
 
-    <p>
-      Redes y medios de contacto.
-    </p>
+        <div class="contact-info-text">
+          <span>MAIL</span>
+          <p>looop@gmail.com</p>
+        </div>
 
-  </div>
+      </div>
+
+      <!-- teléfono -->
+      <div class="contact-info-box">
+
+        <div class="contact-icon blue-box">
+          <img src="img/phone_icon.png" alt="">
+        </div>
+
+        <div class="contact-info-text">
+          <span>TELÉFONO</span>
+          <p>+54 9 11 6828-1872</p>
+        </div>
+
+      </div>
+
+      <!-- horarios -->
+      <div class="contact-info-box">
+
+        <div class="contact-icon pink-box">
+          <img src="img/clock_icon.png" alt="">
+        </div>
+
+        <div class="contact-info-text">
+          <span>HORARIOS</span>
+          <p>Lunes a sábados, de 9:00 a 18 hs</p>
+        </div>
+
+      </div>
+
+      <!-- redes -->
+      <div class="contact-social-section">
+
+        <div class="social-title-row">
+
+          <span>SEGUIME EN MIS REDES</span>
+
+          <div class="social-line"></div>
+
+          <div class="social-square"></div>
+
+        </div>
+
+        <div class="contact-socials">
+
+          <a href="#">
+            <img src="img/instagram_contactame.png" alt="">
+          </a>
+
+          <a href="#">
+            <img src="img/tik_tok_contactame.png" alt="">
+          </a>
+
+          <a href="#">
+            <img src="img/linkedin_contactame.png" alt="">
+          </a>
+
+          <a href="#">
+            <img src="img/youtube_contactame.png" alt="">
+          </a>
+
+          <a href="#">
+            <img src="img/pinterest_contactame.png" alt="">
+          </a>
+
+                    <a href="#">
+            <img src="img/behance.png" alt="">
+          </a>
 
 
-  <div class="contact-links">
+        </div>
 
-    <a href="#">
-      Instagram
-    </a>
 
-    <a href="#">
-      Behance
-    </a>
+      </div>
 
-    <a href="#">
-      YouTube
-    </a>
+    </div>
 
-    <a href="#">
-      Mail
-    </a>
+    <!-- centro -->
+    <div class="contact-center">
 
-  </div>
+      <div class="contact-bubble">
+        ¡Hablemos y hagamos<br>
+        algo increíble juntos!
+      </div>
 
-</section>
+      <img src="img/agos_contacto.png" alt="Agos" class="contact-character">
 
-<footer>
-  © 2026 Portfolio Audiovisual
-</footer>
+    </div>
+
+    <!-- derecha -->
+    <div class="contact-right">
+
+      <div class="contact-form-title">
+
+        <span>ENVIAME UN MAIL</span>
+
+        <div class="form-line"></div>
+
+        <div class="form-square"></div>
+
+      </div>
+
+      <form class="contact-form">
+
+        <label>NOMBRE</label>
+        <input type="text" placeholder="Tu nombre">
+
+        <label>EMAIL</label>
+        <input type="email" placeholder="Tu email">
+
+        <label>ASUNTO</label>
+        <input type="text" placeholder="Asunto">
+
+        <label>MENSAJE</label>
+        <textarea placeholder="Escribí tu mensaje..."></textarea>
+
+        <button type="submit">ENVIAR MENSAJE</button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+</main>
+  <div data-include="footer"></div>
 
 </body>
 </html>
+
