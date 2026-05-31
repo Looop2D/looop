@@ -3,56 +3,319 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sobre mí</title>
+  <title>Animación</title>
   <link rel="stylesheet" href="style.css">
+  <script src="components.js" defer></script>
 </head>
 <body>
+  <div data-include="header"></div>
 
-<header class="navbar">
+<main class="animacion-page">
 
-  <div class="logo">
-    AGOS
-  </div>
+  <!-- HERO -->
+<section class="animacion-hero">
 
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
+  <!-- texto izquierda arriba -->
+  <div class="hero-meta">
+    <span class="rec-light"></span>
 
-</header>
+    <div class="hero-text">
+      <span>00:00:01</span>
+      Animación 2D<br>
+      Motion graphics<br>
+      Cortometrajes<br>
 
-
-<section class="page">
-
-  <div class="section-title">
-
-    <h1>SOBRE MÍ</h1>
-
-  </div>
-
-
-  <div class="about-layout">
-
-    <div class="about-image"></div>
-
-    <div class="about-text">
-
-      <p>
-        Portfolio enfocado en dirección visual, stop motion y narrativa audiovisual.
+      <p class="rec-label">
+        <span>REC</span>
       </p>
-
-      <p>
-        Trabajo explorando técnicas cinematográficas, composición y construcción visual.
-      </p>
-
     </div>
+  </div>
+
+  <!-- ondas -->
+  <div class="orbit orbit-left"></div>
+  <div class="orbit orbit-right"></div>
+
+  <!-- contenido principal -->
+  <div class="animacion-stage">
+
+    <div class="marker-left"></div>
+
+    <h1>ANIMACIÓN</h1>
+
+    <img
+      src="img/agos_sentada.png"
+      alt="Agos"
+      class="animacion-character"
+    >
+
 
   </div>
+<div class="explora-line">
+  <span>EXPLORA UNA SECCIÓN DE MIS TRABAJOS</span>
+  <div class="line"></div>
+  <div class="line-square"></div>
+</div>
 
 </section>
 
-<footer>
-  © 2026 Portfolio Audiovisual
-</footer>
+  <!-- PROYECTOS -->
+  <section class="animacion-grid">
 
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-1">
+
+  <img
+    src="img/portada_animacion_1.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/billie_eillish_bel.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">01</div>
+
+        <div class="meta">
+          <span>00:00 - 00:03</span>
+          <h3>Lunch – Billie Eillish</h3>
+          <p>Animación tradicional</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+      <div class="thumb video-thumb" id="video-card-2">
+
+  <img
+    src="img/portada_animacion_2.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/el_gato_y_la_caja.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">02</div>
+
+        <div class="meta">
+          <span>00:00 - 01:17</span>
+          <h3>El gato y la caja</h3>
+          <p>Stop Motion</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-3">
+
+  <img
+    src="img/portada_animacion_3.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/guiame_lago_puelo.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">03</div>
+
+        <div class="meta">
+          <span>00:00 - 01:46</span>
+          <h3>Guiame Lago Puelo</h3>
+          <p>Animación digital</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-4">
+
+  <img
+    src="img/portada_animacion_4.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/flipbook.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">04</div>
+
+        <div class="meta">
+          <span>00:00 - 00:15</span>
+          <h3>Flipbook</h3>
+          <p>Animación tradicional</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-5">
+
+  <img
+    src="img/portada_animacion_5.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/anticipacion.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">05</div>
+
+        <div class="meta">
+          <span>00:00 - 00:03</span>
+          <h3>Anticipación</h3>
+          <p>Animación digital</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+    <article class="anim-card">
+
+<div class="thumb video-thumb" id="video-card-6">
+
+  <img
+    src="img/portada_animacion_6.png"
+    alt=""
+    class="video-cover"
+  >
+
+  <button class="play-btn">▶</button>
+
+  <video class="video-player" controls>
+    <source src="videos/adios_a_la_tierra.mp4" type="video/mp4">
+  </video>
+
+</div>
+
+      <div class="project-info">
+
+        <div class="number">06</div>
+
+        <div class="meta">
+          <span>00:00 - 00:10</span>
+          <h3>Adiós a la tierra – Isaac Asimov</h3>
+          <p>Animación 3D</p>
+        </div>
+
+        <a href="#">Ver proceso</a>
+
+      </div>
+
+    </article>
+
+  </section>
+
+</main>
+  <div data-include="footer"></div>
+<script>
+const videoCards = document.querySelectorAll(".video-thumb");
+
+videoCards.forEach((card) => {
+  const cover = card.querySelector(".video-cover");
+  const playBtn = card.querySelector(".play-btn");
+  const video = card.querySelector(".video-player");
+
+  function playVideo(e) {
+    e.stopPropagation();
+
+    // cerrar otros videos abiertos
+    videoCards.forEach((otherCard) => {
+      const otherVideo = otherCard.querySelector(".video-player");
+
+      if (otherCard !== card) {
+        otherVideo.pause();
+        otherVideo.currentTime = 0;
+        otherCard.classList.remove("playing");
+      }
+    });
+
+    card.classList.add("playing");
+    video.play();
+  }
+
+  cover.addEventListener("click", playVideo);
+  playBtn.addEventListener("click", playVideo);
+
+  video.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+});
+
+// click afuera = cerrar todo
+document.addEventListener("click", () => {
+  videoCards.forEach((card) => {
+    const video = card.querySelector(".video-player");
+
+    if (card.classList.contains("playing")) {
+      video.pause();
+      video.currentTime = 0;
+      card.classList.remove("playing");
+    }
+  });
+});
+</script>
 </body>
 </html>
+
