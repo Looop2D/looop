@@ -3,319 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animación</title>
+  <title>Sobre mí</title>
   <link rel="stylesheet" href="style.css">
   <script src="components.js" defer></script>
 </head>
-<body>
+
+<body class="about-page">
   <div data-include="header"></div>
 
-<main class="animacion-page">
+  <main class="about-main">
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="about-hero-copy">
+        <p class="about-kicker">DISEÑO, NARRATIVA Y MOVIMIENTO</p>
 
-  <!-- HERO -->
-<section class="animacion-hero">
+        <h1 id="about-title">SOBRE MÍ</h1>
 
-  <!-- texto izquierda arriba -->
-  <div class="hero-meta">
-    <span class="rec-light"></span>
+        <p class="about-lead">
+          Me especializo en crear experiencias que combinan narrativa,
+          diseño y tecnología. Disfruto contar historias a través de la
+          animación, el video y las piezas interactivas.
+        </p>
 
-    <div class="hero-text">
-      <span>00:00:01</span>
-      Animación 2D<br>
-      Motion graphics<br>
-      Cortometrajes<br>
+        <div class="about-actions">
+          <a href="#" class="about-action about-action-primary">
+            <span aria-hidden="true">↓</span>
+            DESCARGAR CV
+          </a>
 
-      <p class="rec-label">
-        <span>REC</span>
+          <a href="index.html#proyectos" class="about-action about-action-secondary">
+            VER PROYECTOS
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="about-hero-art">
+        <span class="about-orbit about-orbit-one" aria-hidden="true"></span>
+        <span class="about-orbit about-orbit-two" aria-hidden="true"></span>
+        <span class="about-spark about-spark-one" aria-hidden="true"></span>
+        <span class="about-spark about-spark-two" aria-hidden="true"></span>
+        <img src="img/about-hero-agostina.png" alt="Agostina sentada dibujando">
+      </div>
+    </section>
+
+    <section class="about-manifesto-card" aria-labelledby="manifesto-title">
+      <div class="about-manifesto-copy">
+        <p>MI MANIFIESTO</p>
+        <h2 id="manifesto-title">Creo para conectar contar y generar emociones</h2>
+        <span>
+          Disfruto transformar ideas en piezas visuales que comunican,
+          emocionan y dejan huella.
+        </span>
+      </div>
+
+      <div class="about-manifesto-media">
+        <img src="img/about-manifesto-scene.png" alt="Agostina caminando en una ciudad">
+        <button type="button" aria-label="Reproducir manifiesto">▶</button>
+      </div>
+    </section>
+
+    <section class="about-details" aria-label="Información sobre mí">
+      <div class="about-timeline about-detail-column">
+        <div class="about-section-heading">
+          <h2>EXPERIENCIA</h2>
+          <span></span>
+        </div>
+
+        <article class="about-entry">
+          <p>Jul 2025 - Actualidad</p>
+          <h3>ADMINISTRACIONES RODRÍGUEZ NIZZI</h3>
+          <span>Asistente contable</span>
+        </article>
+
+        <article class="about-entry">
+          <p>Noviembre 2024 - Junio 2025</p>
+          <h3>SI4K PRODUCCIONES</h3>
+          <span>Productora musical</span>
+        </article>
+
+        <article class="about-entry">
+          <p>Febrero 2024 - Octubre 2024</p>
+          <h3>JOSEMAR</h3>
+          <span>Venta de productos turísticos</span>
+        </article>
+
+        <article class="about-entry">
+          <p>2019 - 2023</p>
+          <h3>DATAYCOM</h3>
+          <span>Venta de productos electrodomésticos</span>
+        </article>
+      </div>
+
+      <div class="about-timeline about-detail-column">
+        <div class="about-section-heading">
+          <h2>EDUCACIÓN</h2>
+          <span></span>
+        </div>
+
+        <article class="about-entry">
+          <p>2022 - Actualidad</p>
+          <h3>UADE</h3>
+          <span>Diseño multimedia e interacción</span>
+        </article>
+
+        <article class="about-entry">
+          <p>2021</p>
+          <h3>DA VINCI</h3>
+          <span>Cine de animación y postproducción</span>
+        </article>
+
+        <article class="about-entry">
+          <p>2016 - 2020</p>
+          <h3>Jesús María de San Vicente de Paul</h3>
+          <span>Secundaria orientada en Cs. Ss.</span>
+        </article>
+
+        <div class="about-languages-block">
+          <div class="about-section-heading">
+            <h2>IDIOMAS</h2>
+            <span></span>
+          </div>
+
+          <div class="about-language-row">
+            <strong>Español</strong>
+            <p>Nivel nativo</p>
+            <div class="about-dots" aria-label="5 de 5">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="about-language-row">
+            <strong>Inglés</strong>
+            <p>Nivel intermedio</p>
+            <div class="about-dots" aria-label="3 de 5">
+              <span></span><span></span><span></span><span class="empty"></span><span class="empty"></span>
+            </div>
+          </div>
+
+          <div class="about-language-row">
+            <strong>Japonés</strong>
+            <p>Nivel avanzado</p>
+            <div class="about-dots" aria-label="4 de 5">
+              <span></span><span></span><span></span><span></span><span class="empty"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-detail-column about-skills-column">
+        <div class="about-section-heading">
+          <h2>HABILIDADES</h2>
+          <span></span>
+        </div>
+
+        <div class="about-skills-grid">
+          <article>
+            <p>Creativa y curiosa</p>
+            <img src="img/about-icon-creatividad.png" alt="">
+          </article>
+
+          <article>
+            <p>Comunicación clara</p>
+            <img src="img/about-icon-comunicacion.png" alt="">
+          </article>
+
+          <article>
+            <p>Adaptación y aprendizaje</p>
+            <img src="img/about-icon-aprendizaje.png" alt="">
+          </article>
+
+          <article>
+            <p>Organización y responsabilidad</p>
+            <img src="img/about-icon-organizacion.png" alt="">
+          </article>
+        </div>
+
+        <div class="about-programs">
+          <div class="about-section-heading">
+            <h2>PROGRAMAS</h2>
+            <span></span>
+          </div>
+
+          <div class="about-program-grid">
+            <img src="img/about-program-ai.png" alt="Illustrator">
+            <img src="img/about-program-ps.png" alt="Photoshop">
+            <img src="img/about-program-id.png" alt="InDesign">
+            <img src="img/about-program-pr.png" alt="Premiere">
+            <img src="img/about-program-figma.png" alt="Figma">
+            <img src="img/about-program-lr.png" alt="Lightroom">
+            <img src="img/about-program-ae.png" alt="After Effects">
+            <img src="img/about-program-dw.png" alt="Dreamweaver">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-quote-band" aria-label="Frase de inspiración">
+      <p>
+        Me inspira lo que emociona,<br>
+        me mueve lo que conecta<br>
+        y me define lo que creo.
       </p>
-    </div>
-  </div>
 
-  <!-- ondas -->
-  <div class="orbit orbit-left"></div>
-  <div class="orbit orbit-right"></div>
+      <img src="img/about-quote-agostina.png" alt="Agostina escribiendo en un cuaderno">
+    </section>
+  </main>
 
-  <!-- contenido principal -->
-  <div class="animacion-stage">
-
-    <div class="marker-left"></div>
-
-    <h1>ANIMACIÓN</h1>
-
-    <img
-      src="img/agos_sentada.png"
-      alt="Agos"
-      class="animacion-character"
-    >
-
-
-  </div>
-<div class="explora-line">
-  <span>EXPLORA UNA SECCIÓN DE MIS TRABAJOS</span>
-  <div class="line"></div>
-  <div class="line-square"></div>
-</div>
-
-</section>
-
-  <!-- PROYECTOS -->
-  <section class="animacion-grid">
-
-    <article class="anim-card">
-
-<div class="thumb video-thumb" id="video-card-1">
-
-  <img
-    src="img/portada_animacion_1.png"
-    alt=""
-    class="video-cover"
-  >
-
-  <button class="play-btn">▶</button>
-
-  <video class="video-player" controls>
-    <source src="videos/billie_eillish_bel.mp4" type="video/mp4">
-  </video>
-
-</div>
-
-      <div class="project-info">
-
-        <div class="number">01</div>
-
-        <div class="meta">
-          <span>00:00 - 00:03</span>
-          <h3>Lunch – Billie Eillish</h3>
-          <p>Animación tradicional</p>
-        </div>
-
-        <a href="#">Ver proceso</a>
-
-      </div>
-
-    </article>
-
-    <article class="anim-card">
-
-      <div class="thumb video-thumb" id="video-card-2">
-
-  <img
-    src="img/portada_animacion_2.png"
-    alt=""
-    class="video-cover"
-  >
-
-  <button class="play-btn">▶</button>
-
-  <video class="video-player" controls>
-    <source src="videos/el_gato_y_la_caja.mp4" type="video/mp4">
-  </video>
-
-</div>
-
-      <div class="project-info">
-
-        <div class="number">02</div>
-
-        <div class="meta">
-          <span>00:00 - 01:17</span>
-          <h3>El gato y la caja</h3>
-          <p>Stop Motion</p>
-        </div>
-
-        <a href="#">Ver proceso</a>
-
-      </div>
-
-    </article>
-
-    <article class="anim-card">
-
-<div class="thumb video-thumb" id="video-card-3">
-
-  <img
-    src="img/portada_animacion_3.png"
-    alt=""
-    class="video-cover"
-  >
-
-  <button class="play-btn">▶</button>
-
-  <video class="video-player" controls>
-    <source src="videos/guiame_lago_puelo.mp4" type="video/mp4">
-  </video>
-
-</div>
-
-      <div class="project-info">
-
-        <div class="number">03</div>
-
-        <div class="meta">
-          <span>00:00 - 01:46</span>
-          <h3>Guiame Lago Puelo</h3>
-          <p>Animación digital</p>
-        </div>
-
-        <a href="#">Ver proceso</a>
-
-      </div>
-
-    </article>
-
-    <article class="anim-card">
-
-<div class="thumb video-thumb" id="video-card-4">
-
-  <img
-    src="img/portada_animacion_4.png"
-    alt=""
-    class="video-cover"
-  >
-
-  <button class="play-btn">▶</button>
-
-  <video class="video-player" controls>
-    <source src="videos/flipbook.mp4" type="video/mp4">
-  </video>
-
-</div>
-
-      <div class="project-info">
-
-        <div class="number">04</div>
-
-        <div class="meta">
-          <span>00:00 - 00:15</span>
-          <h3>Flipbook</h3>
-          <p>Animación tradicional</p>
-        </div>
-
-        <a href="#">Ver proceso</a>
-
-      </div>
-
-    </article>
-
-    <article class="anim-card">
-
-<div class="thumb video-thumb" id="video-card-5">
-
-  <img
-    src="img/portada_animacion_5.png"
-    alt=""
-    class="video-cover"
-  >
-
-  <button class="play-btn">▶</button>
-
-  <video class="video-player" controls>
-    <source src="videos/anticipacion.mp4" type="video/mp4">
-  </video>
-
-</div>
-
-      <div class="project-info">
-
-        <div class="number">05</div>
-
-        <div class="meta">
-          <span>00:00 - 00:03</span>
-          <h3>Anticipación</h3>
-          <p>Animación digital</p>
-        </div>
-
-        <a href="#">Ver proceso</a>
-
-      </div>
-
-    </article>
-
-    <article class="anim-card">
-
-<div class="thumb video-thumb" id="video-card-6">
-
-  <img
-    src="img/portada_animacion_6.png"
-    alt=""
-    class="video-cover"
-  >
-
-  <button class="play-btn">▶</button>
-
-  <video class="video-player" controls>
-    <source src="videos/adios_a_la_tierra.mp4" type="video/mp4">
-  </video>
-
-</div>
-
-      <div class="project-info">
-
-        <div class="number">06</div>
-
-        <div class="meta">
-          <span>00:00 - 00:10</span>
-          <h3>Adiós a la tierra – Isaac Asimov</h3>
-          <p>Animación 3D</p>
-        </div>
-
-        <a href="#">Ver proceso</a>
-
-      </div>
-
-    </article>
-
-  </section>
-
-</main>
   <div data-include="footer"></div>
-<script>
-const videoCards = document.querySelectorAll(".video-thumb");
-
-videoCards.forEach((card) => {
-  const cover = card.querySelector(".video-cover");
-  const playBtn = card.querySelector(".play-btn");
-  const video = card.querySelector(".video-player");
-
-  function playVideo(e) {
-    e.stopPropagation();
-
-    // cerrar otros videos abiertos
-    videoCards.forEach((otherCard) => {
-      const otherVideo = otherCard.querySelector(".video-player");
-
-      if (otherCard !== card) {
-        otherVideo.pause();
-        otherVideo.currentTime = 0;
-        otherCard.classList.remove("playing");
-      }
-    });
-
-    card.classList.add("playing");
-    video.play();
-  }
-
-  cover.addEventListener("click", playVideo);
-  playBtn.addEventListener("click", playVideo);
-
-  video.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-});
-
-// click afuera = cerrar todo
-document.addEventListener("click", () => {
-  videoCards.forEach((card) => {
-    const video = card.querySelector(".video-player");
-
-    if (card.classList.contains("playing")) {
-      video.pause();
-      video.currentTime = 0;
-      card.classList.remove("playing");
-    }
-  });
-});
-</script>
 </body>
 </html>
-
