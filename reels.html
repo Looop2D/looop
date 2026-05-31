@@ -7,344 +7,110 @@
   <link rel="stylesheet" href="style.css">
   <script src="components.js" defer></script>
 </head>
-<body>
+
+<body class="reels-page-body">
   <div data-include="header"></div>
 
-<main class="reels-page">
-
-  <!-- HERO -->
-  <section class="reels-hero">
-
-    <!-- decoraciones -->
-    <div class="reels-orbit-left"></div>
-    <div class="reels-orbit-right"></div>
-
-    <!-- título -->
-    <div class="reels-stage">
-      <h1>REELS</h1>
-
-      <!-- personaje -->
-      <img 
-        src="img/agos_videos.png" 
-        alt="Personaje reels"
-        class="reels-character"
-      >
-
-      <!-- globo -->
-      <div class="reels-bubble">
-        contenido corto, dinámico y pensado para redes sociales.
+  <main class="reels-main">
+    <section class="reels-hero-new" aria-labelledby="reels-title">
+      <div class="reels-camera-meta">
+        <span class="reels-rec-block" aria-hidden="true"></span>
+        <div>
+          <p>00:00:01</p>
+          <span>ANIMACIÓN 2D</span>
+          <span>MOTION GRAPHICS</span>
+          <span>CORTOMETRAJES</span>
+          <b>REC</b>
+        </div>
       </div>
+
+      <span class="reels-orbit-new reels-orbit-left-new" aria-hidden="true"></span>
+      <span class="reels-orbit-new reels-orbit-right-new" aria-hidden="true"></span>
+      <span class="reels-target-new" aria-hidden="true"></span>
+
+      <div class="reels-title-wrap">
+        <h1 id="reels-title">REELS</h1>
+        <p>Pequeñas historias, ideas rápidas y experimentos visuales en formato vertical</p>
+      </div>
+
+      <div class="reels-hero-character">
+        <img src="img/reels-hero-agostina.png" alt="Agostina mirando el celular">
+        <div class="reels-hero-bubble">
+          Historias cortas,<br>
+          impacto grande.
+          <span>♥</span>
+        </div>
+      </div>
+
+      <span class="reels-hero-dash" aria-hidden="true"></span>
+    </section>
+
+    <div class="reels-section-line">
+      <span>EXPLORA MIS REELS</span>
+      <i></i>
+      <b></b>
     </div>
 
-  </section>
+    <section class="reels-gallery" aria-label="Galería de reels">
+      <div class="reels-top-row">
+        <article class="reels-tile">
+          <img src="img/reels_portada1.png" alt="Reel 1">
+          <button type="button" aria-label="Ver reel 1">▶</button>
+        </article>
 
-  <!-- línea -->
-  <section class="reels-line-section">
+        <article class="reels-tile">
+          <img src="img/reels_portada2.png" alt="Reel 2">
+          <button type="button" aria-label="Ver reel 2">▶</button>
+        </article>
 
-    <div class="reels-line-wrap">
+        <article class="reels-tile">
+          <img src="img/reels_portada3.png" alt="Reel 3">
+          <button type="button" aria-label="Ver reel 3">▶</button>
+        </article>
 
-      <span>explorá proyectos</span>
+        <article class="reels-tile">
+          <img src="img/reels_portada4.png" alt="Reel 4">
+          <button type="button" aria-label="Ver reel 4">▶</button>
+        </article>
 
-      <div class="reels-line"></div>
-
-      <div class="reels-line-square"></div>
-
-    </div>
-
-  </section>
-
-  <!-- GRID -->
-  <section class="reels-grid-section">
-
-    <div class="reels-grid">
-
-      <!-- CARD 01 -->
-      <article class="reels-card">
-
-        <div class="reels-thumb video-thumb">
-
-          <img 
-            src="img/portada_videos_1.png" 
-            alt="Reel 1"
-            class="video-cover"
-          >
-
-          <button class="play-btn">▶</button>
-
-          <video class="video-player" controls>
-            <source src="videos/dimelo_diaz.mp4" type="video/mp4">
-          </video>
-
-        </div>
-
-        <div class="reels-info">
-
-          <div class="reels-number">01</div>
-
-          <div class="reels-meta">
-
-            <span>REEL EDITING</span>
-
-            <h3>Dynamic Cut</h3>
-
-            <p>
-              edición rápida para contenido vertical y redes.
-            </p>
-
+        <div class="reels-side-character">
+          <img src="img/reels-personaje-saludo.png" alt="Agostina saludando">
+          <div>
+            ¡Gracias por estar acá!<br>
+            Te muestro mis<br>
+            mejores reels
           </div>
+        </div>
+      </div>
 
+      <div class="reels-bottom-row">
+        <div class="reels-seated-character">
+          <img src="img/reels-personaje-laptop.png" alt="Agostina sentada con laptop">
         </div>
 
-      </article>
+        <article class="reels-tile">
+          <img src="img/reels_portada5.png" alt="Reel 5">
+          <button type="button" aria-label="Ver reel 5">▶</button>
+        </article>
+
+        <article class="reels-tile">
+          <img src="img/reels_portada6.png" alt="Reel 6">
+          <button type="button" aria-label="Ver reel 6">▶</button>
+        </article>
+
+        <article class="reels-tile">
+          <img src="img/reels_portada7.png" alt="Reel 7">
+          <button type="button" aria-label="Ver reel 7">▶</button>
+        </article>
+
+        <article class="reels-tile">
+          <img src="img/reels_portada8.png" alt="Reel 8">
+          <button type="button" aria-label="Ver reel 8">▶</button>
+        </article>
+      </div>
+    </section>
+  </main>
 
-      <!-- CARD 02 -->
-      <article class="reels-card">
-
-        <div class="reels-thumb video-thumb">
-
-          <img 
-            src="img/portada_videos_2.png" 
-            alt="Reel 2"
-            class="video-cover"
-          >
-
-          <button class="play-btn">▶</button>
-
-          <video class="video-player" controls>
-            <source src="videos/ratatouille.mp4" type="video/mp4">
-          </video>
-
-        </div>
-
-        <div class="reels-info">
-
-          <div class="reels-number">02</div>
-
-          <div class="reels-meta">
-
-            <span>SOCIAL MEDIA</span>
-
-            <h3>Fast Motion</h3>
-
-            <p>
-              contenido pensado para retención visual.
-            </p>
-
-          </div>
-
-        </div>
-
-      </article>
-
-      <!-- CARD 03 -->
-      <article class="reels-card">
-
-        <div class="reels-thumb video-thumb">
-
-          <img 
-            src="img/portada_videos_3.png" 
-            alt="Reel 3"
-            class="video-cover"
-          >
-
-          <button class="play-btn">▶</button>
-
-          <video class="video-player" controls>
-            <source src="videos/eclat.mp4" type="video/mp4">
-          </video>
-
-        </div>
-
-        <div class="reels-info">
-
-          <div class="reels-number">03</div>
-
-          <div class="reels-meta">
-
-            <span>VERTICAL VIDEO</span>
-
-            <h3>Visual Rhythm</h3>
-
-            <p>
-              mezcla de motion graphics y edición.
-            </p>
-
-          </div>
-
-        </div>
-
-      </article>
-
-      <!-- CARD 04 -->
-      <article class="reels-card">
-
-        <div class="reels-thumb video-thumb">
-
-          <img 
-            src="img/portada_videos_4.png" 
-            alt="Reel 4"
-            class="video-cover"
-          >
-
-          <button class="play-btn">▶</button>
-
-          <video class="video-player" controls>
-            <source src="videos/david_carson.mp4" type="video/mp4">
-          </video>
-
-        </div>
-
-        <div class="reels-info">
-
-          <div class="reels-number">04</div>
-
-          <div class="reels-meta">
-
-            <span>CONTENT CREATION</span>
-
-            <h3>Creative Edit</h3>
-
-            <p>
-              ritmo, tipografía y transiciones dinámicas.
-            </p>
-
-          </div>
-
-        </div>
-
-      </article>
-
-      <!-- CARD 05 -->
-      <article class="reels-card">
-
-        <div class="reels-thumb video-thumb">
-
-          <img 
-            src="img/portada_videos_5.png" 
-            alt="Reel 5"
-            class="video-cover"
-          >
-
-          <button class="play-btn">▶</button>
-
-          <video class="video-player" controls>
-            <source src="videos/semiotica.mp4" type="video/mp4">
-          </video>
-
-        </div>
-
-        <div class="reels-info">
-
-          <div class="reels-number">05</div>
-
-          <div class="reels-meta">
-
-            <span>SHORT CONTENT</span>
-
-            <h3>Impact Frames</h3>
-
-            <p>
-              edición moderna para TikTok e Instagram.
-            </p>
-
-          </div>
-
-        </div>
-
-      </article>
-
-      <!-- CARD 06 -->
-      <article class="reels-card">
-
-        <div class="reels-thumb video-thumb">
-
-          <img 
-            src="img/portada_videos_6.png" 
-            alt="Reel 6"
-            class="video-cover"
-          >
-
-          <button class="play-btn">▶</button>
-
-          <video class="video-player" controls>
-            <source src="videos/hogar.mp4" type="video/mp4">
-          </video>
-
-        </div>
-
-        <div class="reels-info">
-
-          <div class="reels-number">06</div>
-
-          <div class="reels-meta">
-
-            <span>EDITING STYLE</span>
-
-            <h3>Social Energy</h3>
-
-            <p>
-              videos ágiles enfocados en engagement.
-            </p>
-
-          </div>
-
-        </div>
-
-      </article>
-
-    </div>
-
-  </section>
-
-</main>
   <div data-include="footer"></div>
-
-<script>
-const videoCards = document.querySelectorAll(".video-thumb");
-
-videoCards.forEach((card) => {
-  const cover = card.querySelector(".video-cover");
-  const playBtn = card.querySelector(".play-btn");
-  const video = card.querySelector(".video-player");
-
-  function playVideo(e) {
-    e.stopPropagation();
-
-    videoCards.forEach((otherCard) => {
-      const otherVideo = otherCard.querySelector(".video-player");
-
-      if (otherCard !== card) {
-        otherVideo.pause();
-        otherVideo.currentTime = 0;
-        otherCard.classList.remove("playing");
-      }
-    });
-
-    card.classList.add("playing");
-    video.play();
-  }
-
-  cover.addEventListener("click", playVideo);
-  playBtn.addEventListener("click", playVideo);
-
-  video.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-});
-
-document.addEventListener("click", () => {
-  videoCards.forEach((card) => {
-    const video = card.querySelector(".video-player");
-
-    if (card.classList.contains("playing")) {
-      video.pause();
-      video.currentTime = 0;
-      card.classList.remove("playing");
-    }
-  });
-});
-</script>
-
 </body>
 </html>
-
