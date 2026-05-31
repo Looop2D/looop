@@ -5,73 +5,346 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reels</title>
   <link rel="stylesheet" href="style.css">
+  <script src="components.js" defer></script>
 </head>
 <body>
+  <div data-include="header"></div>
 
-<header class="navbar">
+<main class="reels-page">
 
-  <div class="logo">
-    AGOS
-  </div>
+  <!-- HERO -->
+  <section class="reels-hero">
 
-  <nav>
-    <a href="index.html">Home</a>
-  </nav>
+    <!-- decoraciones -->
+    <div class="reels-orbit-left"></div>
+    <div class="reels-orbit-right"></div>
 
-</header>
+    <!-- título -->
+    <div class="reels-stage">
+      <h1>REELS</h1>
 
+      <!-- personaje -->
+      <img 
+        src="img/agos_videos.png" 
+        alt="Personaje reels"
+        class="reels-character"
+      >
 
-<section class="page">
-
-  <div class="section-title">
-
-    <h1>REELS</h1>
-
-    <p>
-      Selección de trabajos audiovisuales.
-    </p>
-
-  </div>
-
-
-  <div class="grid">
-
-    <div class="card">
-      <div class="image"></div>
-
-      <div class="info">
-        <h2>Showreel 2026</h2>
-        <p>Reel</p>
+      <!-- globo -->
+      <div class="reels-bubble">
+        contenido corto, dinámico y pensado para redes sociales.
       </div>
     </div>
 
+  </section>
 
-    <div class="card">
-      <div class="image"></div>
+  <!-- línea -->
+  <section class="reels-line-section">
 
-      <div class="info">
-        <h2>Motion Reel</h2>
-        <p>Reel</p>
-      </div>
+    <div class="reels-line-wrap">
+
+      <span>explorá proyectos</span>
+
+      <div class="reels-line"></div>
+
+      <div class="reels-line-square"></div>
+
     </div>
 
+  </section>
 
-    <div class="card">
-      <div class="image"></div>
+  <!-- GRID -->
+  <section class="reels-grid-section">
 
-      <div class="info">
-        <h2>Experimental Reel</h2>
-        <p>Reel</p>
-      </div>
+    <div class="reels-grid">
+
+      <!-- CARD 01 -->
+      <article class="reels-card">
+
+        <div class="reels-thumb video-thumb">
+
+          <img 
+            src="img/portada_videos_1.png" 
+            alt="Reel 1"
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/dimelo_diaz.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="reels-info">
+
+          <div class="reels-number">01</div>
+
+          <div class="reels-meta">
+
+            <span>REEL EDITING</span>
+
+            <h3>Dynamic Cut</h3>
+
+            <p>
+              edición rápida para contenido vertical y redes.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 02 -->
+      <article class="reels-card">
+
+        <div class="reels-thumb video-thumb">
+
+          <img 
+            src="img/portada_videos_2.png" 
+            alt="Reel 2"
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/ratatouille.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="reels-info">
+
+          <div class="reels-number">02</div>
+
+          <div class="reels-meta">
+
+            <span>SOCIAL MEDIA</span>
+
+            <h3>Fast Motion</h3>
+
+            <p>
+              contenido pensado para retención visual.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 03 -->
+      <article class="reels-card">
+
+        <div class="reels-thumb video-thumb">
+
+          <img 
+            src="img/portada_videos_3.png" 
+            alt="Reel 3"
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/eclat.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="reels-info">
+
+          <div class="reels-number">03</div>
+
+          <div class="reels-meta">
+
+            <span>VERTICAL VIDEO</span>
+
+            <h3>Visual Rhythm</h3>
+
+            <p>
+              mezcla de motion graphics y edición.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 04 -->
+      <article class="reels-card">
+
+        <div class="reels-thumb video-thumb">
+
+          <img 
+            src="img/portada_videos_4.png" 
+            alt="Reel 4"
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/david_carson.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="reels-info">
+
+          <div class="reels-number">04</div>
+
+          <div class="reels-meta">
+
+            <span>CONTENT CREATION</span>
+
+            <h3>Creative Edit</h3>
+
+            <p>
+              ritmo, tipografía y transiciones dinámicas.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 05 -->
+      <article class="reels-card">
+
+        <div class="reels-thumb video-thumb">
+
+          <img 
+            src="img/portada_videos_5.png" 
+            alt="Reel 5"
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/semiotica.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="reels-info">
+
+          <div class="reels-number">05</div>
+
+          <div class="reels-meta">
+
+            <span>SHORT CONTENT</span>
+
+            <h3>Impact Frames</h3>
+
+            <p>
+              edición moderna para TikTok e Instagram.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
+      <!-- CARD 06 -->
+      <article class="reels-card">
+
+        <div class="reels-thumb video-thumb">
+
+          <img 
+            src="img/portada_videos_6.png" 
+            alt="Reel 6"
+            class="video-cover"
+          >
+
+          <button class="play-btn">▶</button>
+
+          <video class="video-player" controls>
+            <source src="videos/hogar.mp4" type="video/mp4">
+          </video>
+
+        </div>
+
+        <div class="reels-info">
+
+          <div class="reels-number">06</div>
+
+          <div class="reels-meta">
+
+            <span>EDITING STYLE</span>
+
+            <h3>Social Energy</h3>
+
+            <p>
+              videos ágiles enfocados en engagement.
+            </p>
+
+          </div>
+
+        </div>
+
+      </article>
+
     </div>
 
-  </div>
+  </section>
 
-</section>
+</main>
+  <div data-include="footer"></div>
 
-<footer>
-  © 2026 Portfolio Audiovisual
-</footer>
+<script>
+const videoCards = document.querySelectorAll(".video-thumb");
+
+videoCards.forEach((card) => {
+  const cover = card.querySelector(".video-cover");
+  const playBtn = card.querySelector(".play-btn");
+  const video = card.querySelector(".video-player");
+
+  function playVideo(e) {
+    e.stopPropagation();
+
+    videoCards.forEach((otherCard) => {
+      const otherVideo = otherCard.querySelector(".video-player");
+
+      if (otherCard !== card) {
+        otherVideo.pause();
+        otherVideo.currentTime = 0;
+        otherCard.classList.remove("playing");
+      }
+    });
+
+    card.classList.add("playing");
+    video.play();
+  }
+
+  cover.addEventListener("click", playVideo);
+  playBtn.addEventListener("click", playVideo);
+
+  video.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+});
+
+document.addEventListener("click", () => {
+  videoCards.forEach((card) => {
+    const video = card.querySelector(".video-player");
+
+    if (card.classList.contains("playing")) {
+      video.pause();
+      video.currentTime = 0;
+      card.classList.remove("playing");
+    }
+  });
+});
+</script>
 
 </body>
 </html>
+
