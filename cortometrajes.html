@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Edición de Videos</title>
   <link rel="stylesheet" href="style.css">
-  <script src="components.js" defer></script>
+  <script src="js/components.js" defer></script>
 </head>
 
 <body>
@@ -71,7 +71,7 @@
           <button class="play-btn">▶</button>
 
           <video class="video-player" controls>
-            <source src="videos/dimelo_diaz.mp4" type="video/mp4">
+            <source src="mp4/dimelo_diaz.mp4" type="video/mp4">
           </video>
 
         </div>
@@ -106,7 +106,7 @@
           <button class="play-btn">▶</button>
 
           <video class="video-player" controls>
-            <source src="videos/ratatouille.mp4" type="video/mp4">
+            <source src="mp4/ratatouille.mp4" type="video/mp4">
           </video>
 
         </div>
@@ -141,7 +141,7 @@
           <button class="play-btn">▶</button>
 
           <video class="video-player" controls>
-            <source src="videos/eclat.mp4" type="video/mp4">
+            <source src="mp4/eclat.mp4" type="video/mp4">
           </video>
 
         </div>
@@ -176,7 +176,7 @@
           <button class="play-btn">▶</button>
 
           <video class="video-player" controls>
-            <source src="videos/david_carson.mp4" type="video/mp4">
+            <source src="mp4/david_carson.mp4" type="video/mp4">
           </video>
 
         </div>
@@ -211,7 +211,7 @@
           <button class="play-btn">▶</button>
 
           <video class="video-player" controls>
-            <source src="videos/semiotica.mp4" type="video/mp4">
+            <source src="mp4/semiotica.mp4" type="video/mp4">
           </video>
 
         </div>
@@ -246,7 +246,7 @@
           <button class="play-btn">▶</button>
 
           <video class="video-player" controls>
-            <source src="videos/hogar.mp4" type="video/mp4">
+            <source src="mp4/hogar.mp4" type="video/mp4">
           </video>
 
         </div>
@@ -275,59 +275,7 @@
   <!-- FOOTER -->
   <div data-include="footer"></div>
 
-  <!-- SCRIPT VIDEOS -->
-  <script>
-    const videoCards = document.querySelectorAll(".video-thumb");
-
-    videoCards.forEach((card) => {
-
-      const cover = card.querySelector(".video-cover");
-      const playBtn = card.querySelector(".play-btn");
-      const video = card.querySelector(".video-player");
-
-      function playVideo(e){
-        e.stopPropagation();
-
-        videoCards.forEach((otherCard)=>{
-
-          const otherVideo =
-          otherCard.querySelector(".video-player");
-
-          if(otherCard !== card){
-            otherVideo.pause();
-            otherVideo.currentTime = 0;
-            otherCard.classList.remove("playing");
-          }
-
-        });
-
-        card.classList.add("playing");
-        video.play();
-      }
-
-      cover.addEventListener("click", playVideo);
-      playBtn.addEventListener("click", playVideo);
-
-    });
-
-    document.addEventListener("click", ()=>{
-
-      videoCards.forEach((card)=>{
-
-        const video =
-        card.querySelector(".video-player");
-
-        if(card.classList.contains("playing")){
-          video.pause();
-          video.currentTime = 0;
-          card.classList.remove("playing");
-        }
-
-      });
-
-    });
-  </script>
-
 </body>
 </html>
+
 
