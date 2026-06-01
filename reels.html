@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reels</title>
   <link rel="stylesheet" href="style.css">
-  <script src="components.js" defer></script>
+  <script src="js/components.js" defer></script>
 </head>
 
 <body class="reels-page-body">
@@ -53,24 +53,36 @@
 
     <section class="reels-gallery" aria-label="Galería de reels">
       <div class="reels-top-row">
-        <article class="reels-tile">
-          <img src="img/reels_portada1.png" alt="Reel 1">
-          <button type="button" aria-label="Ver reel 1">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada1.png" alt="Reel 1" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 1">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel1.mp4" type="video/mp4">
+          </video>
         </article>
 
-        <article class="reels-tile">
-          <img src="img/reels_portada2.png" alt="Reel 2">
-          <button type="button" aria-label="Ver reel 2">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada2.png" alt="Reel 2" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 2">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel2.mp4" type="video/mp4">
+          </video>
         </article>
 
-        <article class="reels-tile">
-          <img src="img/reels_portada3.png" alt="Reel 3">
-          <button type="button" aria-label="Ver reel 3">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada3.png" alt="Reel 3" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 3">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel3.mp4" type="video/mp4">
+          </video>
         </article>
 
-        <article class="reels-tile">
-          <img src="img/reels_portada4.png" alt="Reel 4">
-          <button type="button" aria-label="Ver reel 4">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada4.png" alt="Reel 4" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 4">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel4.mp4" type="video/mp4">
+          </video>
         </article>
 
         <div class="reels-side-character">
@@ -88,24 +100,36 @@
           <img src="img/reels-personaje-laptop.png" alt="Agostina sentada con laptop">
         </div>
 
-        <article class="reels-tile">
-          <img src="img/reels_portada5.png" alt="Reel 5">
-          <button type="button" aria-label="Ver reel 5">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada5.png" alt="Reel 5" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 5">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel5.mp4" type="video/mp4">
+          </video>
         </article>
 
-        <article class="reels-tile">
-          <img src="img/reels_portada6.png" alt="Reel 6">
-          <button type="button" aria-label="Ver reel 6">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada6.png" alt="Reel 6" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 6">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel6.mp4" type="video/mp4">
+          </video>
         </article>
 
-        <article class="reels-tile">
-          <img src="img/reels_portada7.png" alt="Reel 7">
-          <button type="button" aria-label="Ver reel 7">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada7.png" alt="Reel 7" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 7">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel7.mp4" type="video/mp4">
+          </video>
         </article>
 
-        <article class="reels-tile">
-          <img src="img/reels_portada8.png" alt="Reel 8">
-          <button type="button" aria-label="Ver reel 8">▶</button>
+        <article class="reels-tile video-thumb">
+          <img src="img/reels_portada8.png" alt="Reel 8" class="video-cover">
+          <button type="button" class="play-btn" aria-label="Ver reel 8">▶</button>
+          <video class="video-player" controls preload="metadata">
+            <source src="mp4/reel8.mp4" type="video/mp4">
+          </video>
         </article>
       </div>
     </section>
@@ -114,3 +138,4 @@
   <div data-include="footer"></div>
 </body>
 </html>
+
