@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LOOOP | Portfolio Audiovisual</title>
   <link rel="stylesheet" href="style.css">
-  <script src="components.js" defer></script>
+  <script src="js/components.js" defer></script>
 </head>
 
 <body class="home">
@@ -116,32 +116,41 @@ id="agos-cine">
         <i class="tile-dots"></i>
       </a>
     </section>
+
+    <section class="home-featured-project" aria-labelledby="featured-project-title">
+      <div class="featured-project-copy">
+        <p class="featured-kicker">★ Proyecto destacado</p>
+        <h2 id="featured-project-title">Mi proyecto más importante</h2>
+        <p class="featured-description">
+          Dímelo Díaz es un proyecto que marcó un antes y un después en mi carrera
+        </p>
+        <div class="featured-meta-row">
+          <span>Cortometraje</span>
+          <a href="cortometrajes.html">Ver proceso</a>
+        </div>
+      </div>
+
+      <div class="featured-media video-thumb">
+        <img src="img/portada_videos_1.png" alt="Portada de Dímelo Díaz" class="video-cover">
+        <button class="play-btn" type="button" aria-label="Reproducir Dímelo Díaz">▶</button>
+        <video class="video-player" controls preload="none">
+          <source src="mp4/dimelo_diaz.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="featured-character">
+        <div class="featured-bubble">
+          Este proyecto significa muchísimo para mí.
+          <span aria-hidden="true">♥</span>
+        </div>
+        <img src="img/agos_proyecto_importante.png" alt="Agos emocionada por su proyecto destacado">
+      </div>
+    </section>
   </main>
   <div data-include="footer"></div>
-<script>
-  const agosCine = document.getElementById("agos-cine");
-
-  let frame = 0;
-
-  setInterval(() => {
-
-    if (frame === 0) {
-      // Frame 2
-      agosCine.src = "img/agos_cine2.png";
-      agosCine.style.width = "205px"; // ajusta este valor si se ve grande
-      frame = 1;
-
-    } else {
-      // Frame 1
-      agosCine.src = "img/agos_cine1.png";
-      agosCine.style.width = "220px"; // tamaño normal
-      frame = 0;
-    }
-
-  }, 350); // velocidad de animación
-</script>
 
 </body>
 
 </html>
+
 
