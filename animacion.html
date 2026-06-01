@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animación</title>
   <link rel="stylesheet" href="style.css">
-  <script src="components.js" defer></script>
+  <script src="js/components.js" defer></script>
 </head>
 <body>
   <div data-include="header"></div>
@@ -74,7 +74,7 @@
   <button class="play-btn">▶</button>
 
   <video class="video-player" controls>
-    <source src="videos/billie_eillish_bel.mp4" type="video/mp4">
+    <source src="mp4/billie_eillish_bel.mp4" type="video/mp4">
   </video>
 
 </div>
@@ -108,7 +108,7 @@
   <button class="play-btn">▶</button>
 
   <video class="video-player" controls>
-    <source src="videos/el_gato_y_la_caja.mp4" type="video/mp4">
+    <source src="mp4/el_gato_y_la_caja.mp4" type="video/mp4">
   </video>
 
 </div>
@@ -142,7 +142,7 @@
   <button class="play-btn">▶</button>
 
   <video class="video-player" controls>
-    <source src="videos/guiame_lago_puelo.mp4" type="video/mp4">
+    <source src="mp4/guiame_lago_puelo.mp4" type="video/mp4">
   </video>
 
 </div>
@@ -176,7 +176,7 @@
   <button class="play-btn">▶</button>
 
   <video class="video-player" controls>
-    <source src="videos/flipbook.mp4" type="video/mp4">
+    <source src="mp4/flipbook.mp4" type="video/mp4">
   </video>
 
 </div>
@@ -210,7 +210,7 @@
   <button class="play-btn">▶</button>
 
   <video class="video-player" controls>
-    <source src="videos/anticipacion.mp4" type="video/mp4">
+    <source src="mp4/anticipacion.mp4" type="video/mp4">
   </video>
 
 </div>
@@ -244,7 +244,7 @@
   <button class="play-btn">▶</button>
 
   <video class="video-player" controls>
-    <source src="videos/adios_a_la_tierra.mp4" type="video/mp4">
+    <source src="mp4/adios_a_la_tierra.mp4" type="video/mp4">
   </video>
 
 </div>
@@ -269,53 +269,7 @@
 
 </main>
   <div data-include="footer"></div>
-<script>
-const videoCards = document.querySelectorAll(".video-thumb");
-
-videoCards.forEach((card) => {
-  const cover = card.querySelector(".video-cover");
-  const playBtn = card.querySelector(".play-btn");
-  const video = card.querySelector(".video-player");
-
-  function playVideo(e) {
-    e.stopPropagation();
-
-    // cerrar otros videos abiertos
-    videoCards.forEach((otherCard) => {
-      const otherVideo = otherCard.querySelector(".video-player");
-
-      if (otherCard !== card) {
-        otherVideo.pause();
-        otherVideo.currentTime = 0;
-        otherCard.classList.remove("playing");
-      }
-    });
-
-    card.classList.add("playing");
-    video.play();
-  }
-
-  cover.addEventListener("click", playVideo);
-  playBtn.addEventListener("click", playVideo);
-
-  video.addEventListener("click", (e) => {
-    e.stopPropagation();
-  });
-});
-
-// click afuera = cerrar todo
-document.addEventListener("click", () => {
-  videoCards.forEach((card) => {
-    const video = card.querySelector(".video-player");
-
-    if (card.classList.contains("playing")) {
-      video.pause();
-      video.currentTime = 0;
-      card.classList.remove("playing");
-    }
-  });
-});
-</script>
 </body>
 </html>
+
 
