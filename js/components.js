@@ -77,6 +77,164 @@ const projectPages = new Set([
   "otros_trabajos",
 ]);
 
+const MOBILE_DESKTOP_GATE_KEY = "looopDesktopVersionOnMobile";
+const DESKTOP_VIEWPORT_CONTENT =
+  "width=1440, initial-scale=0.25, minimum-scale=0.1, maximum-scale=5, user-scalable=yes";
+
+function getViewportMeta() {
+  let meta = document.querySelector('meta[name="viewport"]');
+
+  if (!meta) {
+    meta = document.createElement("meta");
+    meta.name = "viewport";
+    document.head.appendChild(meta);
+  }
+
+  return meta;
+}
+
+function forceDesktopViewport() {
+  getViewportMeta().setAttribute("content", DESKTOP_VIEWPORT_CONTENT);
+  document.documentElement.classList.add("desktop-version-on-mobile");
+}
+
+function hasAcceptedDesktopVersion() {
+  try {
+    return window.localStorage.getItem(MOBILE_DESKTOP_GATE_KEY) === "true";
+  } catch (error) {
+    return false;
+  }
+}
+
+function acceptDesktopVersion() {
+  try {
+    window.localStorage.setItem(MOBILE_DESKTOP_GATE_KEY, "true");
+  } catch (error) {
+    // If storage is unavailable, the viewport still changes for this visit.
+  }
+
+  forceDesktopViewport();
+  window.location.reload();
+}
+
+function isMobileDevice() {
+  if (navigator.userAgentData && typeof navigator.userAgentData.mobile === "boolean") {
+    return navigator.userAgentData.mobile;
+  }
+
+  const userAgent = navigator.userAgent || "";
+  const mobileUserAgent = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(userAgent);
+  const compactTouchScreen =
+    navigator.maxTouchPoints > 1 &&
+    Math.min(window.screen.width, window.screen.height) <= 820;
+
+  return mobileUserAgent || compactTouchScreen;
+}
+
+function injectMobileGateStyles() {
+  if (document.getElementById("mobile-desktop-gate-styles")) {
+    return;
+  }
+
+  const style = document.createElement("style");
+  style.id = "mobile-desktop-gate-styles";
+  style.textContent = `
+    .mobile-desktop-gate{
+      position:fixed;
+      inset:0;
+      z-index:9999;
+      display:grid;
+      place-items:center;
+      padding:24px;
+      background:rgba(0,0,0,.92);
+      color:#fff;
+      font-family:var(--font-text, Arial, Helvetica, sans-serif);
+    }
+
+    .mobile-desktop-gate__panel{
+      width:min(100%, 360px);
+      padding:30px 24px;
+      border:1px solid rgba(255,255,255,.18);
+      border-radius:18px;
+      background:#070707;
+      text-align:center;
+      box-shadow:0 24px 70px rgba(0,0,0,.45);
+    }
+
+    .mobile-desktop-gate__brand{
+      width:86px;
+      height:auto;
+      display:block;
+      margin:0 auto 22px;
+    }
+
+    .mobile-desktop-gate__message{
+      margin:0;
+      color:#fff;
+      font-size:18px;
+      line-height:1.35;
+      font-weight:700;
+    }
+
+    .mobile-desktop-gate__button{
+      width:100%;
+      min-height:48px;
+      margin-top:24px;
+      border:0;
+      border-radius:999px;
+      background:var(--red, #A63838);
+      color:#fff;
+      font:700 14px/1 var(--font-text, Arial, Helvetica, sans-serif);
+      cursor:pointer;
+    }
+  `;
+
+  document.head.appendChild(style);
+}
+
+function showMobileDesktopGate() {
+  if (document.querySelector(".mobile-desktop-gate")) {
+    return;
+  }
+
+  injectMobileGateStyles();
+
+  const gate = document.createElement("div");
+  gate.className = "mobile-desktop-gate";
+  gate.setAttribute("role", "dialog");
+  gate.setAttribute("aria-modal", "true");
+  gate.setAttribute("aria-labelledby", "mobile-desktop-gate-message");
+  gate.innerHTML = `
+    <div class="mobile-desktop-gate__panel">
+      <img src="img/logo.png" alt="LOOOP" class="mobile-desktop-gate__brand">
+      <p class="mobile-desktop-gate__message" id="mobile-desktop-gate-message">
+        no esta diseñado para celulares, te invitamos a verlo desde la version de escritorio
+      </p>
+      <button class="mobile-desktop-gate__button" type="button">Continuar</button>
+    </div>
+  `;
+
+  gate
+    .querySelector(".mobile-desktop-gate__button")
+    .addEventListener("click", acceptDesktopVersion);
+
+  document.body.appendChild(gate);
+  gate.querySelector(".mobile-desktop-gate__button").focus();
+}
+
+function initMobileDesktopGate() {
+  if (!isMobileDevice()) {
+    return;
+  }
+
+  if (hasAcceptedDesktopVersion()) {
+    forceDesktopViewport();
+    return;
+  }
+
+  showMobileDesktopGate();
+}
+
 const getCurrentPage = () => {
   const fileName = window.location.pathname.split("/").pop();
   return pageMap[fileName] || "index";
@@ -353,6 +511,7 @@ function linkContactSocials() {
 }
 
 async function initSite() {
+  initMobileDesktopGate();
   await loadComponents();
   linkContactSocials();
   const backgroundMusic = initBackgroundMusic();
