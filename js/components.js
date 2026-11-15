@@ -306,6 +306,52 @@ function initVideoCards(backgroundMusic) {
     const cover = card.querySelector(".video-cover");
     const playBtn = card.querySelector(".play-btn");
     const video = card.querySelector(".video-player");
+    const youtubeId = card.dataset.youtubeId;
+    const youtubeHolder = card.querySelector(".youtube-player");
+
+    if (youtubeId && youtubeHolder && cover && playBtn) {
+      function stopYoutube() {
+        youtubeHolder.innerHTML = "";
+        card.classList.remove("playing");
+        backgroundMusic.resumeAfterVideo();
+      }
+
+      card.stopYoutube = stopYoutube;
+
+      function playYoutube(event) {
+        event.stopPropagation();
+        backgroundMusic.pauseForVideo();
+
+        videoCards.forEach((otherCard) => {
+          const otherVideo = otherCard.querySelector(".video-player");
+
+          if (otherCard !== card && otherVideo) {
+            otherVideo.pause();
+            otherVideo.currentTime = 0;
+          }
+
+          if (otherCard !== card && otherCard.stopYoutube) {
+            otherCard.stopYoutube();
+          }
+
+          if (otherCard !== card) {
+            otherCard.classList.remove("playing");
+          }
+        });
+
+        youtubeHolder.innerHTML =
+          '<iframe src="https://www.youtube.com/embed/' + youtubeId +
+          '?autoplay=1&rel=0" title="Nos Vemos Luego" ' +
+          'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" ' +
+          'allowfullscreen></iframe>';
+        card.classList.add("playing");
+      }
+
+      cover.addEventListener("click", playYoutube);
+      playBtn.addEventListener("click", playYoutube);
+      youtubeHolder.addEventListener("click", (event) => event.stopPropagation());
+      return;
+    }
 
     if (!cover || !playBtn || !video) {
       return;
@@ -340,6 +386,10 @@ function initVideoCards(backgroundMusic) {
   document.addEventListener("click", () => {
     videoCards.forEach((card) => {
       const video = card.querySelector(".video-player");
+
+      if (card.stopYoutube && card.classList.contains("playing")) {
+        card.stopYoutube();
+      }
 
       if (video && card.classList.contains("playing")) {
         video.pause();
